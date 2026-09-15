@@ -593,6 +593,51 @@ body.quiz-open {
 }
 
 /* ============================================
+   PROJECT CARDS
+   ============================================ */
+.projects-section {
+  background: linear-gradient(180deg, rgba(225, 182, 74, 0.04), transparent);
+  border-top: 1px solid var(--gold-soft);
+  border-bottom: 1px solid var(--gold-soft);
+}
+
+.project-card {
+  background: linear-gradient(180deg, #241d18 0%, #1a1512 100%);
+  border: 1px solid rgba(225, 182, 74, 0.2);
+  border-radius: var(--radius);
+  padding: 2rem;
+  transition: var(--transition);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--gold);
+  box-shadow: var(--shadow-gold);
+}
+
+.project-card .card-icon {
+  margin: 0 0 1.25rem;
+}
+
+.project-number {
+  color: var(--gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.project-card h3 {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.project-card p:not(.project-number) {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* ============================================
    BLOG GALLERY / ACHIEVEMENTS
    ============================================ */
 .blog-gallery-section {
